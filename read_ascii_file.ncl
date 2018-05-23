@@ -20,4 +20,7 @@ EU=stringtofloat(str_get_field(data, 5, delim))
 
 print(EU)
 
+allDates=numAsciiRow("AO_EU.csv")     ; numAsciiRow gives number of rows (record) in file 
+print(allDates)
+
 end

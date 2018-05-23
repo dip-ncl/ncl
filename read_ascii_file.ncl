@@ -10,12 +10,13 @@ data=asciiread("AO_EU.csv",-1,"string")   ; first field is filename with path  ,
 
 delim=","
 
-year=str_get_field(data, 1, delim)    ; str_get_field is used to get each field seperated by deliminator here it is , 1 gives field 
-                                      ; before first occurence of deliminator etc
-mon=str_get_field(data, 2, delim)
-day=str_get_field(data, 3, delim)
-AO=str_get_field(data, 4, delim)
-EU=str_get_field(data, 5, delim)
+year=stringtointeger(str_get_field(data, 1, delim))    ; str_get_field is used to get each field seperated by deliminator
+                                                       ; here it is "," 1 gives field 
+                                                       ; before first occurence of deliminator etc
+mon=stringtointeger(str_get_field(data, 2, delim))     ; based on data type string field is converted to integer, float, double etc 
+day=stringtointeger(str_get_field(data, 3, delim))
+AO=stringtofloat(str_get_field(data, 4, delim))
+EU=stringtofloat(str_get_field(data, 5, delim))
 
 print(EU)
 

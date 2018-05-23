@@ -8,7 +8,7 @@ data=asciiread("AO_EU.csv",-1,"string")   ; first field is filename with path  ,
 
 ;print(data)
 
-delim=","
+delim=","              ; deliminator can be "," or " " etc
 
 year=stringtointeger(str_get_field(data, 1, delim))    ; str_get_field is used to get each field seperated by deliminator
                                                        ; here it is "," 1 gives field 

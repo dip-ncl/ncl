@@ -4,7 +4,10 @@ begin
 
 data=asciiread("AO_EU.csv",-1,"string")   ; first field is filename with path  , -1 says read all records or you have to specify 
                                           ; number of record as array , string gives data type  
-                                          ; Here we read all data in variable data as string records
+                                          ; Here we read all data in variable data as string records 
+                                          
+; data=asciiread("AO",105,"integer")    ; first field specifies filename along with path, 105 is dimension size to read, and last
+                                         one is type of data
 
 ;print(data)
 

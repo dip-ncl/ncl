@@ -1,3 +1,7 @@
+;-------------------------------------------------------------
+;scatter plot with marker color and index is decided according to values
+;---------------------------------------------------------------
+
 begin
 
 AO=asciiread("AO",120,"float")
